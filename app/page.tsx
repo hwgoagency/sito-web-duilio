@@ -23,7 +23,9 @@ export default function Home() {
             />
           </FadeIn>
           
-          <FadeIn delay={0.4} className="divider-duilio w-32 border-panna-antico mb-8 opacity-50" />
+          <FadeIn delay={0.4}>
+            <div className="divider-duilio w-32 border-panna-antico mb-8 opacity-50" />
+          </FadeIn>
           
           <FadeIn delay={0.6} className="text-xl md:text-2xl uppercase tracking-[0.2em] font-medium max-w-2xl">
             Dove il tempo si ferma e il sapore ha il profumo di casa.
