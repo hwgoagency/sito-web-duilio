@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: ['/admin/'],
     },
-    sitemap: 'https://duilioristorante.it/sitemap.xml',
+    sitemap: 'https://www.duilio1939.com/sitemap.xml',
   }
 }

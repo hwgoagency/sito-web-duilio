@@ -6,7 +6,11 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Il Menu del Giorno | Duilio Ostia",
-  description: "Da Duilio non ci sono menu infiniti o incomprensibili. Solo la cucina del mercato, quella del giorno, con prezzi onesti.",
+  description: "Da Duilio non ci sono menu infiniti o incomprensibili. Solo la cucina del mercato, quella del giorno, con prezzi onesti. Pesce fresco a Ostia Lido.",
+  keywords: ["Menu Duilio Ostia", "Menu ristorante pesce Ostia", "Prezzi ristorante Ostia", "Cucina romana menu"],
+  alternates: {
+    canonical: "https://www.duilio1939.com/menu",
+  },
 };
 
 type MenuItem = {
@@ -44,7 +48,7 @@ export default function MenuPage() {
     "description": menu?.week || "Menu del giorno",
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://duilioristorante.it/menu"
+      "@id": "https://www.duilio1939.com/menu"
     },
     "hasMenuSection": menu?.categories.map(cat => ({
       "@type": "MenuSection",
