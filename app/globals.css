@@ -1,26 +1,101 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-rosso-melograno: #911932;
+  --color-terra-siena: #c78e55;
+  --color-panna-antico: #feebdc;
+  --color-blu-notte: #323c50;
+  --color-lavagna: #0f1423;
+
+  --color-background: var(--color-panna-antico);
+  --color-foreground: var(--color-blu-notte);
+
+  --font-payoff: "Southam", cursive;
+  --font-body: var(--font-barlow-condensed), "Avenir Next Condensed", "Georgia", serif;
+
+  --shadow-warm: 0 4px 24px rgba(145, 25, 50, 0.12);
+  --shadow-warm-lg: 0 8px 48px rgba(145, 25, 50, 0.18);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  @font-face {
+    font-family: 'Southam';
+    src: url('/fonts/Southam.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
   }
 }
 
+:root {
+  --color-rosso-melograno: #911932;
+  --color-terra-siena: #c78e55;
+  --color-panna-antico: #feebdc;
+  --color-blu-notte: #323c50;
+  --color-lavagna: #0f1423;
+
+  --color-background: var(--color-panna-antico);
+  --color-text-primary: var(--color-blu-notte);
+  --color-text-dark: var(--color-lavagna);
+  --color-accent: var(--color-rosso-melograno);
+  --color-accent-warm: var(--color-terra-siena);
+}
+
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-text-primary);
+  font-family: var(--font-body);
+  line-height: 1.6;
+}
+
+@layer components {
+  .btn-primary {
+    background-color: var(--color-rosso-melograno);
+    color: var(--color-panna-antico);
+    font-family: var(--font-body);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 14px 32px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+  }
+  .btn-primary:hover {
+    background-color: #7a1428;
+    transform: translateY(-1px);
+  }
+
+  .btn-secondary {
+    background-color: transparent;
+    color: var(--color-rosso-melograno);
+    border: 2px solid var(--color-rosso-melograno);
+    font-family: var(--font-body);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 12px 30px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  .btn-secondary:hover {
+    background-color: var(--color-rosso-melograno);
+    color: var(--color-panna-antico);
+  }
+
+  .divider-duilio {
+    border: none;
+    height: 3px;
+    background: linear-gradient(
+      to right,
+      transparent,
+      var(--color-terra-siena) 20%,
+      var(--color-terra-siena) 80%,
+      transparent
+    );
+    margin: 48px auto;
+    max-width: 200px;
+  }
 }
