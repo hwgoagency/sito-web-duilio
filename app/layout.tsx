@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     siteName: "Duilio Ostia",
     images: [
       {
-        url: "https://www.duilio1939.com/images/logo-full-v2.png",
+        url: "https://www.duilio1939.com/images/og-image.png",
         width: 1200,
         height: 630,
         alt: "Duilio Ostia Logo",
@@ -60,7 +60,7 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "Restaurant",
     "name": "Duilio",
-    "image": "https://www.duilio1939.com/images/logo-full-v2.png",
+    "image": "https://www.duilio1939.com/images/og-image.png",
     "description": "Storico ristorante e hub sociale a Ostia Lido. Offriamo cucina tradizionale romana sincera, pesce fresco del giorno, corsi gratuiti per la comunità e uno spazio di vera convivialità.",
     "@id": "https://www.duilio1939.com",
     "url": "https://www.duilio1939.com",
