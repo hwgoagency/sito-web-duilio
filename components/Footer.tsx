@@ -32,8 +32,19 @@ export default function Footer() {
         </div>
       </div>
       
-      <div className="max-w-6xl mx-auto text-center font-body uppercase tracking-widest text-xs opacity-50 border-t border-white/10 pt-8">
-        © {new Date().getFullYear()} Duilio Ostia — Tutti i diritti riservati
+      <div className="max-w-6xl mx-auto text-center font-body uppercase tracking-widest text-xs opacity-50 border-t border-white/10 pt-8 space-y-2">
+        <p>© {new Date().getFullYear()} Duilio Ostia — Tutti i diritti riservati</p>
+        <p>
+          Sito creato da{" "}
+          <a
+            href="https://herewegoagency.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:opacity-100 underline underline-offset-2 transition-opacity"
+          >
+            Here We Go Agency
+          </a>
+        </p>
       </div>
     </footer>
   );
