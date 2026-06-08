@@ -19,7 +19,7 @@ export default function Footer() {
           <h4 className="text-terra-siena font-bold mb-4">Dove Siamo</h4>
           <p className="opacity-80">Via San Quiriaco 1</p>
           <p className="opacity-80">00122 Ostia Lido, Roma</p>
-          <p className="opacity-80 mt-4">Tel: 06 1234 5678</p>
+          <p className="opacity-80 mt-4">Tel e Whatsapp: 347 783 8031</p>
           <p className="opacity-80">Email: info@duilioristorante.it</p>
         </div>
         

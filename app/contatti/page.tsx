@@ -84,7 +84,7 @@ export default function Contatti() {
 
           <div>
             <h2 className="text-3xl uppercase tracking-widest font-bold text-rosso-melograno mb-4">Recapiti Diretti</h2>
-            <p className="text-lg text-blu-notte/80 mb-2">Telefono: <a href="tel:0612345678" className="font-bold hover:text-terra-siena">06 1234 5678</a></p>
+            <p className="text-lg text-blu-notte/80 mb-2">Telefono e Whatsapp: <a href="tel:+393477838031" className="font-bold hover:text-terra-siena">347 783 8031</a></p>
             <p className="text-lg text-blu-notte/80">Email: <a href="mailto:info@duilioristorante.it" className="font-bold hover:text-terra-siena">info@duilioristorante.it</a></p>
           </div>
         </FadeIn>
