@@ -25,10 +25,7 @@ export default function Footer() {
         
         <div className="text-center md:text-left font-body uppercase tracking-widest text-sm space-y-4">
           <h4 className="text-terra-siena font-bold mb-4">Orari</h4>
-          <p className="opacity-80">Lunedì - Chiuso</p>
-          <p className="opacity-80">Mar - Gio: 08:00 - 23:00</p>
-          <p className="opacity-80">Ven - Sab: 08:00 - 00:00</p>
-          <p className="opacity-80">Domenica: 08:00 - 18:00</p>
+          <p className="opacity-80">Tutti i giorni: 10:00 - 24:00</p>
         </div>
       </div>
       

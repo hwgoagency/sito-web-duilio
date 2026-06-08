@@ -76,17 +76,8 @@ export default function Contatti() {
           <div>
             <h2 className="text-3xl uppercase tracking-widest font-bold text-rosso-melograno mb-4">Orari All-Day</h2>
             <ul className="text-lg text-blu-notte/80 space-y-2">
-              <li className="flex justify-between border-b border-blu-notte/10 pb-2">
-                <span>Lunedì</span> <span className="font-bold">Chiuso</span>
-              </li>
-              <li className="flex justify-between border-b border-blu-notte/10 pb-2">
-                <span>Martedì - Giovedì</span> <span className="font-bold">08:00 - 23:00</span>
-              </li>
-              <li className="flex justify-between border-b border-blu-notte/10 pb-2">
-                <span>Venerdì - Sabato</span> <span className="font-bold">08:00 - 00:00</span>
-              </li>
-              <li className="flex justify-between">
-                <span>Domenica</span> <span className="font-bold">08:00 - 18:00</span>
+              <li className="flex justify-between pb-2">
+                <span>Tutti i giorni</span> <span className="font-bold">10:00 - 24:00</span>
               </li>
             </ul>
           </div>
