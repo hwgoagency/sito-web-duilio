@@ -91,9 +91,13 @@ export default function MenuPage() {
             <Image src="/images/illustration-maestro-v2.png" alt="Maestro" width={250} height={250} />
         </FadeIn>
 
+        <FadeIn delay={0.3} className="w-full mb-16 flex justify-center h-[80vh] min-h-[600px] max-h-[1000px]">
+           <iframe src="/menu.pdf" className="w-full h-full rounded-xl shadow-2xl border-4 border-terra-siena/20" title="Menu PDF"></iframe>
+        </FadeIn>
+
         {!menu ? (
           <div className="text-center py-20 text-2xl uppercase tracking-widest text-rosso-melograno">
-            Menu non disponibile al momento.
+            Menu testuale non disponibile al momento.
           </div>
         ) : (
           <>
