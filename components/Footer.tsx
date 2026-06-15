@@ -20,7 +20,7 @@ export default function Footer() {
           <p className="opacity-80">Via San Quiriaco 1</p>
           <p className="opacity-80">00122 Ostia Lido, Roma</p>
           <p className="opacity-80 mt-4">Tel e Whatsapp: 347 783 8031</p>
-          <p className="opacity-80">Email: info@duilioristorante.it</p>
+          <p className="opacity-80">Email: info@duilio1939.com</p>
         </div>
         
         <div className="text-center md:text-left font-body uppercase tracking-widest text-sm space-y-4">

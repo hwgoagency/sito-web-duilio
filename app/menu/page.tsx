@@ -33,7 +33,7 @@ export default function MenuPage() {
   let menu: MenuData | null = null;
   
   try {
-    const dataFilePath = path.join(process.cwd(), '../backend/data/menu.json');
+    const dataFilePath = path.join(process.cwd(), 'data/menu.json');
     const fileContents = fs.readFileSync(dataFilePath, 'utf8');
     menu = JSON.parse(fileContents);
   } catch (error) {
@@ -87,13 +87,19 @@ export default function MenuPage() {
       </div>
 
       <div className="max-w-4xl mx-auto px-6 py-20 w-full relative">
-        <FadeIn delay={0.4} className="absolute top-0 right-0 -mt-32 mr-8 opacity-90 hidden md:block z-20">
-            <Image src="/images/illustration-maestro-v2.png" alt="Maestro" width={250} height={250} />
-        </FadeIn>
 
-        <FadeIn delay={0.3} className="w-full mb-16 flex justify-center h-[80vh] min-h-[600px] max-h-[1000px]">
-           <iframe src="/menu.pdf" className="w-full h-full rounded-xl shadow-2xl border-4 border-terra-siena/20" title="Menu PDF"></iframe>
-        </FadeIn>
+        <div className="w-full mb-16">
+          <FadeIn delay={0.3} className="hidden md:flex justify-center h-[80vh] min-h-[600px] max-h-[1000px]">
+             <iframe src="/menu.pdf" className="w-full h-full rounded-xl shadow-2xl border-4 border-terra-siena/20" title="Menu PDF"></iframe>
+          </FadeIn>
+          
+          <FadeIn delay={0.3} className="md:hidden flex flex-col items-center justify-center p-8 bg-lavagna/5 rounded-xl border border-terra-siena/20 shadow-warm">
+             <p className="text-blu-notte/80 text-center mb-6 font-medium">Il nostro menu sfogliabile è ottimizzato per schermi più grandi, ma puoi scaricare la versione PDF oppure scorrere per leggere i piatti qui sotto.</p>
+             <a href="/menu.pdf" download="Menu_Duilio.pdf" className="btn-secondary flex items-center gap-2">
+                Scarica Menu PDF
+             </a>
+          </FadeIn>
+        </div>
 
         {!menu ? (
           <div className="text-center py-20 text-2xl uppercase tracking-widest text-rosso-melograno">

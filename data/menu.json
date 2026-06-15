@@ -1,0 +1,146 @@
+{
+  "week": "Menu del Giorno",
+  "categories": [
+    {
+      "name": "Antipasti",
+      "items": [
+        {"name": "Polpettine al Sugo", "description": "", "price": "8.00"},
+        {"name": "Mozzarella in Carrozza e Salsa d'Alici", "description": "", "price": "6.00"},
+        {"name": "Polpette di Bollito e Maionese alla Salsa Verde", "description": "", "price": "8.00"},
+        {"name": "Salsicce e Piselli", "description": "", "price": "8.00"}
+      ]
+    },
+    {
+      "name": "Primi",
+      "items": [
+        {"name": "Spaghetto Felicetti Cacio, Pepe e Zucchine alla Scapece", "description": "", "price": "12.00"},
+        {"name": "Santa Amatriciana", "description": "", "price": "12.00"},
+        {"name": "Spaghetto Felicetti alla Carbonara", "description": "", "price": "12.00"},
+        {"name": "Mezzemaniche Felicetti alla Gricia", "description": "", "price": "12.00"}
+      ]
+    },
+    {
+      "name": "Secondi",
+      "items": [
+        {"name": "Fettina Panata e Contorno", "description": "", "price": "13.00"},
+        {"name": "Involtino al Vino Bianco", "description": "", "price": "12.00"},
+        {"name": "Polletto alla Cacciatora", "description": "", "price": "12.00"},
+        {"name": "Ossobuco con il Purè", "description": "", "price": "14.00"}
+      ]
+    },
+    {
+      "name": "Contorni",
+      "items": [
+        {"name": "Patate al Forno", "description": "", "price": "5.00"},
+        {"name": "Cicoria Ripassata", "description": "", "price": "4.00"},
+        {"name": "Purè di Patate", "description": "", "price": "4.00"}
+      ]
+    },
+    {
+      "name": "Dolci",
+      "items": [
+        {"name": "Fragole con la Panna", "description": "", "price": "5.00"},
+        {"name": "Tiramisù", "description": "", "price": "5.00"},
+        {"name": "Torta della Nonna", "description": "", "price": "5.00"},
+        {"name": "Zuppa Inglese", "description": "", "price": "5.00"}
+      ]
+    },
+    {
+      "name": "Bibite",
+      "items": [
+        {"name": "Acqua Naturale 0,75 L (Vetro)", "description": "", "price": "2.50"},
+        {"name": "Acqua Frizzante 0,75 L (Vetro)", "description": "", "price": "2.50"},
+        {"name": "Pepsi Cola 33 CL (Vetro)", "description": "", "price": "3.50"},
+        {"name": "Aranciata 33 CL (Vetro)", "description": "", "price": "3.50"},
+        {"name": "Chinotto 33 CL (Vetro)", "description": "", "price": "3.50"},
+        {"name": "Gassosa / Tonica 33 CL (Vetro)", "description": "", "price": "3.00"},
+        {"name": "Succo di Frutta (Vari Gusti) 20 CL", "description": "", "price": "3.00"}
+      ]
+    },
+    {
+      "name": "Vino della Casa",
+      "items": [
+        {"name": "Vino Bianco della Casa 0,25 L", "description": "", "price": "4.00"},
+        {"name": "Vino Bianco della Casa 0,50 L", "description": "", "price": "8.00"},
+        {"name": "Vino Bianco della Casa 1,00 L", "description": "", "price": "12.00"},
+        {"name": "Vino Rosso della Casa 0,50 L", "description": "", "price": "8.00"},
+        {"name": "Vino Rosso della Casa 1,00 L", "description": "", "price": "12.00"}
+      ]
+    },
+    {
+      "name": "Birre",
+      "items": [
+        {"name": "Bionda 0,40", "description": "", "price": "5.00"},
+        {"name": "Bianca 0,40", "description": "", "price": "5.00"},
+        {"name": "Rossa 0,40", "description": "", "price": "5.00"},
+        {"name": "Grezza 0,40", "description": "", "price": "5.00"}
+      ]
+    },
+    {
+      "name": "Caffetteria",
+      "items": [
+        {"name": "Caffè Espresso", "description": "", "price": "1.50"},
+        {"name": "Caffè Corretto", "description": "", "price": "2.50"}
+      ]
+    },
+    {
+      "name": "Vini Bianchi",
+      "items": [
+        {"name": "Vermentino di Gallura DOCG Rias", "description": "", "price": "27.00"},
+        {"name": "Falanghina Vulcanico Paternoster", "description": "", "price": "29.00"},
+        {"name": "Lugana Tommasi", "description": "", "price": "30.00"}
+      ]
+    },
+    {
+      "name": "Vino Rosato",
+      "items": [
+        {"name": "Pinot Grigio Rosato Bosco del Merlo", "description": "", "price": "30.00"}
+      ]
+    },
+    {
+      "name": "Vini Rossi",
+      "items": [
+        {"name": "Vermentino Nero La Nerine", "description": "", "price": "36.00"},
+        {"name": "Alessandro La Luna del Casale", "description": "", "price": "35.00"},
+        {"name": "Gattinara Travaglini", "description": "", "price": "65.00"},
+        {"name": "Vajoscuro Cesanese del Piglio Superiore Riserva", "description": "", "price": "38.00"},
+        {"name": "Orgiolo Lacrima di Morro D'Alba", "description": "", "price": "33.00"},
+        {"name": "Corvina Veronese IGT Verona Fugolo", "description": "", "price": "31.00"}
+      ]
+    },
+    {
+      "name": "Bollicine",
+      "items": [
+        {"name": "Prosecco Valdobbiadene DOCG Dirupo", "description": "", "price": "28.00"},
+        {"name": "Franciacorta Brut Contadi Castaldi", "description": "", "price": "40.00"},
+        {"name": "Peri Talento Rose Millesimato", "description": "", "price": "39.00"},
+        {"name": "Oltrepo Pavese La Piotta Dosaggio Zero", "description": "", "price": "36.00"}
+      ]
+    },
+    {
+      "name": "Calici",
+      "items": [
+        {"name": "Calice Vermentino di Gallura", "description": "", "price": "6.00"},
+        {"name": "Calice Falanghina Vulcanico", "description": "", "price": "6.00"},
+        {"name": "Calice Lugana Tommasi", "description": "", "price": "6.00"},
+        {"name": "Calice Pinot Grigio Rosato", "description": "", "price": "7.00"},
+        {"name": "Calice Vermentino Nero 8", "description": "", "price": "8.00"},
+        {"name": "Calice Orgiolo Lacrima di Morro 6", "description": "", "price": "6.00"},
+        {"name": "Calice Corvina Veronese", "description": "", "price": "6.00"}
+      ]
+    },
+    {
+      "name": "Amari e Grappe",
+      "items": [
+        {"name": "Braulio", "description": "", "price": "5.00"},
+        {"name": "Jefferson", "description": "", "price": "6.00"},
+        {"name": "Amaro del Capo", "description": "", "price": "4.00"},
+        {"name": "Limoncello", "description": "", "price": "4.00"},
+        {"name": "Grappa Bianca", "description": "", "price": "5.00"},
+        {"name": "Grappa Barrique", "description": "", "price": "5.00"},
+        {"name": "Passito Recioto Valpolicella", "description": "", "price": "5.00"},
+        {"name": "Passito Ries", "description": "", "price": "6.00"}
+      ]
+    }
+  ]
+}

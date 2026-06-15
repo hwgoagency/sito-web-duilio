@@ -1,47 +1,12 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
-import toast from "react-hot-toast";
 import FadeIn from "@/components/FadeIn";
+import { MessageCircle, Phone } from "lucide-react";
 
 export default function Contatti() {
-  const [formType, setFormType] = useState<"client" | "pro">("client");
-  const [status, setStatus] = useState<"idle" | "submitting" | "success">("idle");
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setStatus("submitting");
-    
-    const formData = new FormData(e.currentTarget);
-    const data = {
-      type: formType,
-      name: formData.get("name"),
-      email: formData.get("email"),
-      subject: formData.get("subject"),
-      message: formData.get("message"),
-    };
-
-    try {
-      const res = await fetch("/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data),
-      });
-      if (res.ok) {
-        setStatus("idle");
-        toast.success(formType === "pro" ? "Proposta inviata! Ti risponderemo presto." : "Messaggio inviato con successo!");
-        (e.target as HTMLFormElement).reset();
-      } else {
-        setStatus("idle");
-        toast.error("Si è verificato un errore. Riprova più tardi.");
-      }
-    } catch (error) {
-      console.error(error);
-      setStatus("idle");
-      toast.error("Errore di connessione. Riprova più tardi.");
-    }
-  };
+  // Direct contact page
 
   return (
     <div className="flex flex-col min-h-screen bg-panna-antico text-blu-notte pt-[72px]">
@@ -85,71 +50,49 @@ export default function Contatti() {
           <div>
             <h2 className="text-3xl uppercase tracking-widest font-bold text-rosso-melograno mb-4">Recapiti Diretti</h2>
             <p className="text-lg text-blu-notte/80 mb-2">Telefono e Whatsapp: <a href="tel:+393477838031" className="font-bold hover:text-terra-siena">347 783 8031</a></p>
-            <p className="text-lg text-blu-notte/80">Email: <a href="mailto:info@duilioristorante.it" className="font-bold hover:text-terra-siena">info@duilioristorante.it</a></p>
+            <p className="text-lg text-blu-notte/80">Email: <a href="mailto:info@duilio1939.com" className="font-bold hover:text-terra-siena">info@duilio1939.com</a></p>
           </div>
         </FadeIn>
 
         {/* Moduli di Contatto */}
         <FadeIn direction="left" delay={0.4} className="bg-panna-antico/80 p-8 md:p-12 border-2 border-terra-siena/20 shadow-warm rounded-sm relative backdrop-blur-sm">
-          {/* Tabs */}
-          <div className="flex gap-4 mb-8 border-b border-blu-notte/10 pb-4">
-            <button 
-              onClick={() => { setFormType("client"); setStatus("idle"); }}
-              className={`text-lg uppercase tracking-widest font-bold pb-2 border-b-2 transition-colors ${formType === "client" ? "border-rosso-melograno text-rosso-melograno" : "border-transparent text-blu-notte/50 hover:text-blu-notte"}`}
-            >
-              Scrivici
-            </button>
-            <button 
-              onClick={() => { setFormType("pro"); setStatus("idle"); }}
-              className={`text-lg uppercase tracking-widest font-bold pb-2 border-b-2 transition-colors ${formType === "pro" ? "border-terra-siena text-terra-siena" : "border-transparent text-blu-notte/50 hover:text-blu-notte"}`}
-            >
-              Proponi un Corso
-            </button>
+          <div className="text-center mb-8">
+            <h2 className="text-3xl uppercase tracking-widest font-bold text-lavagna mb-4">Contattaci Direttamente</h2>
+            <p className="text-lg text-blu-notte/80">
+              Per prenotazioni, informazioni o per proporre un corso, utilizza i nostri canali diretti. 
+              Rispondiamo in pochi minuti.
+            </p>
           </div>
 
-          <form onSubmit={handleSubmit} className="flex flex-col gap-4">
-              {formType === "pro" && (
-                <div className="mb-4 bg-panna-antico p-4 border border-terra-siena/30 rounded-sm">
-                  <p className="text-sm text-blu-notte/80 leading-relaxed font-medium italic">
-                    "Se hai qualcosa da insegnare — una competenza, una passione, un mestiere — questo posto potrebbe essere il tuo. 
-                    Cerchiamo professionisti, artigiani, esperti. Se hai un'idea di corso, scrivici."
-                  </p>
-                </div>
-              )}
+          <div className="flex flex-col gap-6">
+            <a 
+              href="https://wa.me/393477838031" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="btn-primary w-full flex items-center justify-center gap-3 py-4 text-lg bg-[#25D366] hover:bg-[#128C7E] border-none text-white transition-colors"
+            >
+              <MessageCircle size={24} />
+              Scrivici su WhatsApp
+            </a>
+            
+            <a 
+              href="tel:+393477838031" 
+              className="btn-secondary w-full flex items-center justify-center gap-3 py-4 text-lg border-2 border-blu-notte text-blu-notte hover:bg-blu-notte hover:text-panna-antico transition-colors"
+            >
+              <Phone size={24} />
+              Chiamaci Ora (347 783 8031)
+            </a>
+          </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div className="flex flex-col gap-1">
-                  <label htmlFor="name" className="text-xs uppercase tracking-widest font-bold text-blu-notte">Nome</label>
-                  <input required type="text" id="name" name="name" className="p-3 border border-blu-notte/20 bg-panna-antico/50 outline-none focus:border-rosso-melograno transition-colors" />
-                </div>
-                <div className="flex flex-col gap-1">
-                  <label htmlFor="email" className="text-xs uppercase tracking-widest font-bold text-blu-notte">Email</label>
-                  <input required type="email" id="email" name="email" className="p-3 border border-blu-notte/20 bg-panna-antico/50 outline-none focus:border-rosso-melograno transition-colors" />
-                </div>
-              </div>
-
-              {formType === "pro" && (
-                <div className="flex flex-col gap-1">
-                  <label htmlFor="subject" className="text-xs uppercase tracking-widest font-bold text-blu-notte">Materia del Corso (es. Ceramica, Inglese)</label>
-                  <input required type="text" id="subject" name="subject" className="p-3 border border-blu-notte/20 bg-panna-antico/50 outline-none focus:border-terra-siena transition-colors" />
-                </div>
-              )}
-
-              <div className="flex flex-col gap-1">
-                <label htmlFor="message" className="text-xs uppercase tracking-widest font-bold text-blu-notte">
-                  {formType === "pro" ? "Raccontaci la tua idea / progetto" : "Messaggio"}
-                </label>
-                <textarea required id="message" name="message" rows={5} className="p-3 border border-blu-notte/20 bg-panna-antico/50 outline-none focus:border-rosso-melograno transition-colors resize-none"></textarea>
-              </div>
-
-              <button 
-                type="submit" 
-                disabled={status === "submitting"}
-                className={`w-full mt-4 flex items-center justify-center gap-2 ${formType === "pro" ? "btn-secondary" : "btn-primary"}`}
-              >
-                {status === "submitting" ? "Invio..." : formType === "pro" ? "Invia Proposta" : "Invia Messaggio"}
-              </button>
-            </form>
+          <div className="mt-12 pt-8 border-t border-blu-notte/10 text-center">
+            <h3 className="text-xl uppercase tracking-widest font-bold text-blu-notte mb-2">Contatti Commerciali</h3>
+            <p className="text-blu-notte/70 mb-4">
+              La nostra email è riservata esclusivamente a proposte commerciali o amministrative.
+            </p>
+            <a href="mailto:info@duilio1939.com" className="font-bold text-terra-siena hover:underline text-lg">
+              info@duilio1939.com
+            </a>
+          </div>
         </FadeIn>
       </div>
     </div>

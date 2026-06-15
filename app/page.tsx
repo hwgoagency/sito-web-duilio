@@ -7,9 +7,20 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen bg-background text-text-primary">
       {/* Hero Section */}
-      <section className="relative flex flex-col items-center justify-center min-h-[90vh] py-20 px-6 text-center bg-rosso-melograno text-panna-antico overflow-hidden">
+      <section className="relative flex flex-col items-center justify-center min-h-[90vh] py-20 px-6 text-center bg-lavagna text-panna-antico overflow-hidden">
+        {/* Background Image with Overlay */}
+        <div className="absolute inset-0 z-0">
+          <Image 
+            src="/images/hero-bg.webp" 
+            alt="Duilio Ostia Esterno" 
+            fill 
+            className="object-cover object-center opacity-40 mix-blend-luminosity"
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-lavagna via-lavagna/80 to-transparent"></div>
+        </div>
         {/* Subtle noise overlay could be added here via CSS */}
-        <div className="absolute inset-0 opacity-5 pointer-events-none bg-[url('https://www.transparenttextures.com/patterns/p6.png')]"></div>
+        <div className="absolute inset-0 opacity-5 pointer-events-none bg-[url('https://www.transparenttextures.com/patterns/p6.png')] z-0"></div>
         
         <div className="relative z-10 w-full max-w-4xl flex flex-col items-center">
           <FadeIn delay={0.2} className="mb-8 transform hover:scale-105 transition-transform duration-500">
@@ -70,14 +81,16 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Placeholder Foto Locale (Esterno/Interno Principale) */}
+      {/* Foto Locale (Esterno/Interno Principale) */}
       <section className="px-6 md:px-12 bg-panna-antico pb-24">
         <div className="max-w-6xl mx-auto">
-          <FadeIn delay={0.4} className="w-full h-80 md:h-[500px] bg-lavagna/5 rounded-sm border-2 border-terra-siena border-dashed flex flex-col items-center justify-center text-center p-6">
-            <span className="font-payoff text-4xl text-terra-siena/60 mb-2">In Arrivo...</span>
-            <span className="text-blu-notte/50 font-medium uppercase tracking-widest text-sm">
-              [Placeholder Foto: L'ingresso o la sala principale del locale]
-            </span>
+          <FadeIn delay={0.4} className="w-full relative h-80 md:h-[600px] rounded-sm overflow-hidden shadow-warm-lg">
+            <Image 
+              src="/images/neon-sign.webp" 
+              alt="L'insegna luminosa di Duilio"
+              fill
+              className="object-cover"
+            />
           </FadeIn>
         </div>
       </section>
@@ -136,14 +149,43 @@ export default function Home() {
           </FadeIn>
         </div>
         
-        {/* Placeholder Foto Dettaglio (Cucina/Bancone) */}
+        {/* Foto Dettaglio (Bancone) */}
         <div className="max-w-6xl mx-auto mt-16">
-          <FadeIn delay={0.4} className="w-full h-64 bg-lavagna/5 rounded-sm border-2 border-terra-siena border-dashed flex flex-col items-center justify-center text-center p-6">
-            <span className="font-payoff text-3xl text-terra-siena/60 mb-2">In Arrivo...</span>
-            <span className="text-blu-notte/50 font-medium uppercase tracking-widest text-sm">
-              [Placeholder Foto: Dettaglio del bancone o Cristiano ai fornelli]
-            </span>
+          <FadeIn delay={0.4} className="w-full relative h-80 md:h-[500px] rounded-sm overflow-hidden shadow-warm-lg">
+            <Image 
+              src="/images/counter-cristiano.webp" 
+              alt="Dettaglio del bancone e del nostro staff"
+              fill
+              className="object-cover object-center"
+            />
           </FadeIn>
+        </div>
+      </section>
+
+      {/* Momenti da Duilio Gallery Section */}
+      <section className="py-24 px-6 md:px-12 bg-panna-antico border-t border-terra-siena/20">
+        <div className="max-w-6xl mx-auto">
+          <FadeIn className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl uppercase tracking-tighter font-bold mb-4 text-lavagna">
+              Momenti da Duilio
+            </h2>
+            <p className="font-payoff text-3xl text-terra-siena lowercase">attimi di pura felicità</p>
+          </FadeIn>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <FadeIn delay={0.1} className="relative h-64 lg:h-80 rounded-sm overflow-hidden shadow-warm group">
+              <Image src="/images/dining-atmosphere.webp" alt="Atmosfera sala" fill className="object-cover group-hover:scale-105 transition-transform duration-700" />
+            </FadeIn>
+            <FadeIn delay={0.2} className="relative h-64 lg:h-80 rounded-sm overflow-hidden shadow-warm group">
+              <Image src="/images/wine-pouring.webp" alt="Vino" fill className="object-cover group-hover:scale-105 transition-transform duration-700" />
+            </FadeIn>
+            <FadeIn delay={0.3} className="relative h-64 lg:h-80 rounded-sm overflow-hidden shadow-warm group">
+              <Image src="/images/beer-taps.webp" alt="Birra alla spina" fill className="object-cover group-hover:scale-105 transition-transform duration-700" />
+            </FadeIn>
+            <FadeIn delay={0.4} className="relative h-64 lg:h-80 rounded-sm overflow-hidden shadow-warm group">
+              <Image src="/images/people-dining.webp" alt="Atmosfera conviviale in sala" fill className="object-cover group-hover:scale-105 transition-transform duration-700" />
+            </FadeIn>
+          </div>
         </div>
       </section>
 

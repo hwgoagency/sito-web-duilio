@@ -57,11 +57,13 @@ export default function ChiSiamo() {
       {/* La Macchina del Tempo */}
       <section className="py-24 px-6 relative max-w-6xl mx-auto w-full">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-          <FadeIn direction="right" className="order-2 md:order-1 relative h-96 w-full bg-lavagna/5 rounded-sm border-2 border-terra-siena border-dashed flex flex-col items-center justify-center text-center p-6">
-             <span className="font-payoff text-4xl text-terra-siena/60 mb-2">In Arrivo...</span>
-             <span className="text-blu-notte/50 font-medium uppercase tracking-widest text-sm">
-                [Placeholder Foto: Mani che impastano o scena nostalgica in cucina]
-             </span>
+          <FadeIn direction="right" className="order-2 md:order-1 relative h-96 w-full rounded-sm overflow-hidden shadow-warm-lg">
+            <Image 
+              src="/images/team-abbracciato.webp" 
+              alt="Il nostro team unito da Duilio"
+              fill
+              className="object-cover"
+            />
           </FadeIn>
           <FadeIn direction="left" className="order-1 md:order-2 flex flex-col gap-6">
             <h2 className="text-4xl uppercase tracking-tighter font-bold text-lavagna">La Macchina del Tempo</h2>
@@ -131,12 +133,14 @@ export default function ChiSiamo() {
           </FadeIn>
         </div>
 
-        {/* Placeholder Foto Hub Sociale */}
-        <FadeIn delay={0.5} className="mt-12 w-full h-80 bg-lavagna/5 rounded-sm border-2 border-terra-siena border-dashed flex flex-col items-center justify-center text-center p-6">
-          <span className="font-payoff text-4xl text-terra-siena/60 mb-2">In Arrivo...</span>
-          <span className="text-blu-notte/50 font-medium uppercase tracking-widest text-sm">
-            [Placeholder Foto: L'area dedicata ai corsi / grande tavolo conviviale]
-          </span>
+        {/* Foto Hub Sociale */}
+        <FadeIn delay={0.5} className="mt-12 w-full relative h-96 rounded-sm overflow-hidden shadow-warm-lg">
+          <Image 
+            src="/images/kids-workshop.webp" 
+            alt="Laboratorio creativo per bambini nel nostro hub sociale"
+            fill
+            className="object-cover object-center"
+          />
         </FadeIn>
 
         <FadeIn delay={0.6} className="mt-16 text-center">

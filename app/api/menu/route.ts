@@ -4,8 +4,8 @@ import path from 'path';
 
 export async function GET() {
   try {
-    // Read the menu data from the backend data folder
-    const dataFilePath = path.join(process.cwd(), '../backend/data/menu.json');
+    // Read the menu data from the local data folder
+    const dataFilePath = path.join(process.cwd(), 'data/menu.json');
     const fileContents = fs.readFileSync(dataFilePath, 'utf8');
     const menuData = JSON.parse(fileContents);
     

@@ -14,7 +14,7 @@ export async function POST(req: Request) {
 
     // Determine path to backend/data/menu.json
     // In dev: process.cwd() is frontend. We need to go up one level.
-    const menuPath = path.join(process.cwd(), '../backend/data/menu.json');
+    const menuPath = path.join(process.cwd(), 'data/menu.json');
 
     // Save the new menu
     fs.writeFileSync(menuPath, JSON.stringify(menu, null, 2), 'utf-8');
