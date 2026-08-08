@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Tilt3D } from "@/components/Tilt3D";
 import ReservationForm from "@/components/ReservationForm";
 import Link from "next/link";
 import FadeIn from "@/components/FadeIn";
@@ -173,17 +174,25 @@ export default function Home() {
           </FadeIn>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <FadeIn delay={0.1} className="relative h-64 lg:h-80 rounded-sm overflow-hidden shadow-warm group">
-              <Image src="/images/dining-atmosphere.webp" alt="Atmosfera sala" fill className="object-cover group-hover:scale-105 transition-transform duration-700" />
+            <FadeIn delay={0.1}>
+              <Tilt3D className="relative h-64 lg:h-80 rounded-sm overflow-hidden shadow-warm group">
+                <Image src="/images/dining-atmosphere.webp" alt="Atmosfera sala" fill className="object-cover group-hover:scale-105 transition-transform duration-700" />
+              </Tilt3D>
             </FadeIn>
-            <FadeIn delay={0.2} className="relative h-64 lg:h-80 rounded-sm overflow-hidden shadow-warm group">
-              <Image src="/images/wine-pouring.webp" alt="Vino" fill className="object-cover group-hover:scale-105 transition-transform duration-700" />
+            <FadeIn delay={0.2}>
+              <Tilt3D className="relative h-64 lg:h-80 rounded-sm overflow-hidden shadow-warm group">
+                <Image src="/images/wine-pouring.webp" alt="Vino" fill className="object-cover group-hover:scale-105 transition-transform duration-700" />
+              </Tilt3D>
             </FadeIn>
-            <FadeIn delay={0.3} className="relative h-64 lg:h-80 rounded-sm overflow-hidden shadow-warm group">
-              <Image src="/images/beer-taps.webp" alt="Birra alla spina" fill className="object-cover group-hover:scale-105 transition-transform duration-700" />
+            <FadeIn delay={0.3}>
+              <Tilt3D className="relative h-64 lg:h-80 rounded-sm overflow-hidden shadow-warm group">
+                <Image src="/images/beer-taps.webp" alt="Birra alla spina" fill className="object-cover group-hover:scale-105 transition-transform duration-700" />
+              </Tilt3D>
             </FadeIn>
-            <FadeIn delay={0.4} className="relative h-64 lg:h-80 rounded-sm overflow-hidden shadow-warm group">
-              <Image src="/images/people-dining.webp" alt="Atmosfera conviviale in sala" fill className="object-cover group-hover:scale-105 transition-transform duration-700" />
+            <FadeIn delay={0.4}>
+              <Tilt3D className="relative h-64 lg:h-80 rounded-sm overflow-hidden shadow-warm group">
+                <Image src="/images/people-dining.webp" alt="Atmosfera conviviale in sala" fill className="object-cover group-hover:scale-105 transition-transform duration-700" />
+              </Tilt3D>
             </FadeIn>
           </div>
         </div>
