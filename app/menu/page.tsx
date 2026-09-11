@@ -45,7 +45,7 @@ export default function MenuPage() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Menu",
-    "name": "Menu del Giorno - Duilio Ostia",
+    "name": "Menu Ristorante - Duilio Ostia",
     "description": menu?.week || "Menu del giorno",
     "mainEntityOfPage": {
       "@type": "WebPage",
@@ -125,7 +125,7 @@ export default function MenuPage() {
         ) : (
           <>
             <FadeIn delay={0.2} className="text-center mb-16">
-              <p className="uppercase tracking-widest font-bold text-rosso-melograno text-lg">Menu della settimana</p>
+              <p className="uppercase tracking-widest font-bold text-rosso-melograno text-lg">Menu ristorante</p>
               <p className="font-serif italic text-blu-notte/70">{menu.week}</p>
               <div className="divider-duilio w-24 border-terra-siena mt-8 opacity-80" />
             </FadeIn>

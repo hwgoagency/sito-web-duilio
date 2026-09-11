@@ -1,19 +1,20 @@
 {
-  "week": "Menu del Giorno",
+  "week": "Menu ristorante",
   "categories": [
     {
       "name": "Antipasti",
       "items": [
         {"name": "Polpettine al Sugo", "description": "", "price": "8.00"},
-        {"name": "Mozzarella in Carrozza e Salsa d'Alici", "description": "", "price": "6.00"},
+        {"name": "Mozzarella in Carrozza e Salsa d'Alici", "description": "", "price": "8.00"},
         {"name": "Polpette di Bollito e Maionese alla Salsa Verde", "description": "", "price": "8.00"},
-        {"name": "Salsicce e Piselli", "description": "", "price": "8.00"}
+        {"name": "Antipasto Misto Duilio", "description": "Prezzo a persona.", "price": "15.00"},
+        {"name": "Tagliere Misto Salumi e Formaggi", "description": "Prezzo a persona.", "price": "10.00"}
       ]
     },
     {
       "name": "Primi",
       "items": [
-        {"name": "Spaghetto Felicetti Cacio, Pepe e Zucchine alla Scapece", "description": "", "price": "12.00"},
+        {"name": "Spaghetto Felicetti Cacio e Pepe", "description": "", "price": "12.00"},
         {"name": "Santa Amatriciana", "description": "", "price": "12.00"},
         {"name": "Spaghetto Felicetti alla Carbonara", "description": "", "price": "12.00"},
         {"name": "Mezzemaniche Felicetti alla Gricia", "description": "", "price": "12.00"}
@@ -32,22 +33,24 @@
       "name": "Contorni",
       "items": [
         {"name": "Patate al Forno", "description": "", "price": "5.00"},
-        {"name": "Cicoria Ripassata", "description": "", "price": "4.00"},
+        {"name": "Cicoria Ripassata", "description": "", "price": "5.00"},
         {"name": "Purè di Patate", "description": "", "price": "4.00"}
       ]
     },
     {
       "name": "Dolci",
       "items": [
-        {"name": "Fragole con la Panna", "description": "", "price": "5.00"},
-        {"name": "Tiramisù", "description": "", "price": "5.00"},
+        {"name": "Frutta di Stagione", "description": "", "price": "5.00"},
+        {"name": "Tiramisù", "description": "", "price": "6.00"},
         {"name": "Torta della Nonna", "description": "", "price": "5.00"},
-        {"name": "Zuppa Inglese", "description": "", "price": "5.00"}
+        {"name": "La Nostra Zuppa Inglese", "description": "", "price": "6.00"}
       ]
     },
     {
       "name": "Bibite",
       "items": [
+        {"name": "Acqua Panna 0,50 L (Vetro)", "description": "", "price": "2.00"},
+        {"name": "Acqua San Pellegrino 0,50 L (Vetro)", "description": "", "price": "2.00"},
         {"name": "Acqua Naturale 0,75 L (Vetro)", "description": "", "price": "2.50"},
         {"name": "Acqua Frizzante 0,75 L (Vetro)", "description": "", "price": "2.50"},
         {"name": "Pepsi Cola 33 CL (Vetro)", "description": "", "price": "3.50"},
@@ -60,7 +63,6 @@
     {
       "name": "Vino della Casa",
       "items": [
-        {"name": "Vino Bianco della Casa 0,25 L", "description": "", "price": "4.00"},
         {"name": "Vino Bianco della Casa 0,50 L", "description": "", "price": "8.00"},
         {"name": "Vino Bianco della Casa 1,00 L", "description": "", "price": "12.00"},
         {"name": "Vino Rosso della Casa 0,50 L", "description": "", "price": "8.00"},
@@ -70,10 +72,13 @@
     {
       "name": "Birre",
       "items": [
+        {"name": "Bionda 0,20", "description": "", "price": "3.00"},
+        {"name": "Bianca 0,20", "description": "", "price": "3.00"},
+        {"name": "Rossa 0,20", "description": "", "price": "3.00"},
         {"name": "Bionda 0,40", "description": "", "price": "5.00"},
         {"name": "Bianca 0,40", "description": "", "price": "5.00"},
         {"name": "Rossa 0,40", "description": "", "price": "5.00"},
-        {"name": "Grezza 0,40", "description": "", "price": "5.00"}
+        {"name": "Grezza 0,40", "description": "", "price": "6.00"}
       ]
     },
     {
@@ -81,6 +86,17 @@
       "items": [
         {"name": "Caffè Espresso", "description": "", "price": "1.50"},
         {"name": "Caffè Corretto", "description": "", "price": "2.50"}
+      ]
+    },
+    {
+      "name": "La Nostra Colazione",
+      "items": [
+        {"name": "Cookies", "description": "Prezzo al pezzo.", "price": "2.50"},
+        {"name": "Pancakes", "description": "Nutella, acero.", "price": "5.00"},
+        {"name": "Avocado Toast", "description": "", "price": "6.00"},
+        {"name": "Uova e Bacon", "description": "Strapazzate o all’occhio di bue.", "price": "7.00"},
+        {"name": "Toast Mozzarella e Formaggio", "description": "", "price": "5.00"},
+        {"name": "Le Nostre Merendine", "description": "", "price": "3.50"}
       ]
     },
     {
@@ -132,12 +148,13 @@
     {
       "name": "Amari e Grappe",
       "items": [
-        {"name": "Braulio", "description": "", "price": "5.00"},
-        {"name": "Jefferson", "description": "", "price": "6.00"},
-        {"name": "Amaro del Capo", "description": "", "price": "4.00"},
-        {"name": "Limoncello", "description": "", "price": "4.00"},
-        {"name": "Grappa Bianca", "description": "", "price": "5.00"},
-        {"name": "Grappa Barrique", "description": "", "price": "5.00"},
+        {"name": "Amaro", "description": "", "price": "3.50"},
+        {"name": "Grappa", "description": "", "price": "4.50"}
+      ]
+    },
+    {
+      "name": "Passito",
+      "items": [
         {"name": "Passito Recioto Valpolicella", "description": "", "price": "5.00"},
         {"name": "Passito Ries", "description": "", "price": "6.00"}
       ]
