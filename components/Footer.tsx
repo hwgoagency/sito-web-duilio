@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -25,14 +24,23 @@ export default function Footer() {
         
         <div className="text-center md:text-left font-body uppercase tracking-widest text-sm space-y-4">
           <h4 className="text-terra-siena font-bold mb-4">Orari</h4>
-          <p className="opacity-80">Tutti i giorni: 10:00 - 24:00</p>
+          <p className="opacity-80">Tutti i giorni: 08:30 - 24:00</p>
         </div>
       </div>
       
       <div className="max-w-6xl mx-auto text-center font-body uppercase tracking-widest text-xs opacity-50 border-t border-white/10 pt-8 space-y-2">
         <p>© {new Date().getFullYear()} Duilio Ostia — Tutti i diritti riservati</p>
         <p>
-          Sito creato da{" "}
+          Progetto attivato da{" "}
+          <a
+            href="https://gruppoinnesco.com"
+            target="_blank"
+            rel="noopener"
+            className="hover:opacity-100 underline underline-offset-2 transition-opacity"
+          >
+            INNESCO
+          </a>
+          {" "}·{" "}
           <a
             href="https://herewegoagency.com"
             target="_blank"

@@ -94,7 +94,7 @@ export default function RootLayout({
           "Saturday",
           "Sunday"
         ],
-        "opens": "10:00",
+        "opens": "08:30",
         "closes": "00:00"
       }
     ]
@@ -138,7 +138,7 @@ export default function RootLayout({
       lang="it"
       className={`${barlowCondensed.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col font-body bg-background text-text-primary pt-[72px]">
+      <body className="min-h-full flex flex-col font-body bg-background text-text-primary pt-[92px]">
         <Toaster 
           position="bottom-center"
           toastOptions={{

@@ -38,7 +38,7 @@ export default function ReservationForm() {
       </div>
       
       <p className="text-sm text-blu-notte/60 mt-4 italic">
-        Rispondiamo in pochi minuti durante i nostri orari di apertura (10:00 - 24:00).
+        Rispondiamo in pochi minuti durante i nostri orari di apertura (08:30 - 24:00).
       </p>
     </div>
   );

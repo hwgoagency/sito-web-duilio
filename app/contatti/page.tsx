@@ -42,7 +42,7 @@ export default function Contatti() {
             <h2 className="text-3xl uppercase tracking-widest font-bold text-rosso-melograno mb-4">Orari All-Day</h2>
             <ul className="text-lg text-blu-notte/80 space-y-2">
               <li className="flex justify-between pb-2">
-                <span>Tutti i giorni</span> <span className="font-bold">10:00 - 24:00</span>
+                <span>Tutti i giorni</span> <span className="font-bold">08:30 - 24:00</span>
               </li>
             </ul>
           </div>

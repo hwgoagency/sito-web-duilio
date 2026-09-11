@@ -7,6 +7,14 @@ import FadeIn from "@/components/FadeIn";
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen bg-background text-text-primary">
+      <aside aria-label="Nuovi orari di apertura" className="bg-terra-siena text-lavagna px-6 py-4 text-center">
+        <p className="text-lg tracking-wide">
+          <strong className="uppercase">Nuovi orari</strong> · Tutti i giorni <strong className="whitespace-nowrap">08:30–24:00</strong>
+        </p>
+        <Link href="/menu#caffetteria" className="inline-block mt-1 underline underline-offset-4 font-semibold hover:text-rosso-melograno">
+          Ti aspettiamo anche a colazione. Scopri il menu caffetteria
+        </Link>
+      </aside>
       {/* Hero Section */}
       <section className="relative flex flex-col items-center justify-center min-h-[90vh] py-20 px-6 text-center bg-lavagna text-panna-antico overflow-hidden">
         {/* Background Image with Overlay */}

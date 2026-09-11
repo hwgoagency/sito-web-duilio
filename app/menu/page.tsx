@@ -1,12 +1,13 @@
 import Image from "next/image";
+import Link from "next/link";
 import fs from "fs";
 import path from "path";
 import FadeIn from "@/components/FadeIn";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Il Menu del Giorno | Duilio Ostia",
-  description: "Da Duilio non ci sono menu infiniti o incomprensibili. Solo la cucina del mercato, quella del giorno, con prezzi onesti. Pesce fresco a Ostia Lido.",
+  title: "Menu Ristorante e Caffetteria | Duilio Ostia",
+  description: "Scopri i menu ristorante e caffetteria di Duilio a Ostia Lido. Caffè, colazioni e cucina del giorno: tutti i giorni dalle 08:30 alle 24:00.",
   keywords: ["Menu Duilio Ostia", "Menu ristorante pesce Ostia", "Prezzi ristorante Ostia", "Cucina romana menu"],
   alternates: {
     canonical: "https://www.duilio1939.com/menu",
@@ -80,7 +81,7 @@ export default function MenuPage() {
         
         <FadeIn delay={0.2} className="relative z-10 max-w-4xl mx-auto">
           <h1 className="text-5xl md:text-7xl uppercase tracking-tighter font-bold mb-4 text-panna-antico">
-            Il Menu del Giorno
+            I nostri menu
           </h1>
           <p className="font-payoff text-4xl text-terra-siena lowercase">fatto con amore</p>
         </FadeIn>
@@ -88,7 +89,23 @@ export default function MenuPage() {
 
       <div className="max-w-4xl mx-auto px-6 py-20 w-full relative">
 
-        <div className="w-full mb-16">
+        <nav aria-label="Scegli il menu" className="flex flex-wrap justify-center gap-4 mb-12">
+          <a href="#ristorante" className="btn-secondary">Menu ristorante</a>
+          <a href="#caffetteria" className="btn-primary">Menu caffetteria</a>
+        </nav>
+
+        <section id="caffetteria" aria-labelledby="caffetteria-title" className="scroll-mt-28 mb-16 border-y border-terra-siena/40 py-10 text-center">
+          <h2 id="caffetteria-title" className="text-3xl uppercase tracking-widest font-bold text-lavagna mb-4">Caffetteria e colazione</h2>
+          <p className="text-lg text-blu-notte/80 mb-6">Dal primo caffè, come a casa. Ti aspettiamo tutti i giorni dalle 08:30.</p>
+          <div className="flex flex-wrap justify-center gap-4 mb-8">
+            <a href="/menu-caffetteria.pdf" target="_blank" rel="noopener noreferrer" className="btn-primary">Apri menu caffetteria (PDF)</a>
+            <a href="/menu-caffetteria.pdf" download="Menu_Caffetteria_Duilio.pdf" className="btn-secondary">Scarica menu caffetteria</a>
+          </div>
+          <iframe src="/menu-caffetteria.pdf" loading="lazy" className="hidden md:block w-full h-[80vh] min-h-[600px] max-h-[1000px] rounded-sm border border-terra-siena/30" title="Menu caffetteria Duilio in PDF" />
+        </section>
+
+        <div id="ristorante" className="w-full mb-16 scroll-mt-28">
+          <h2 className="text-3xl uppercase tracking-widest font-bold text-lavagna mb-8 text-center">Menu ristorante</h2>
           <FadeIn delay={0.3} className="hidden md:flex justify-center h-[80vh] min-h-[600px] max-h-[1000px]">
              <iframe src="/menu.pdf" className="w-full h-full rounded-xl shadow-2xl border-4 border-terra-siena/20" title="Menu PDF"></iframe>
           </FadeIn>
@@ -138,7 +155,7 @@ export default function MenuPage() {
                <p className="font-serif italic text-blu-notte/70 mb-8 max-w-xl mx-auto">
                  Ricordiamo ai nostri gentili ospiti che i piatti potrebbero subire variazioni in base alla disponibilità giornaliera del pescato e delle materie prime.
                </p>
-               <a href="/#prenota" className="btn-primary">Prenota Ora</a>
+               <Link href="/#prenota" className="btn-primary">Prenota Ora</Link>
             </FadeIn>
           </>
         )}

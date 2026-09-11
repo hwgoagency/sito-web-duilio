@@ -51,7 +51,7 @@ export default function Navbar() {
             alt="Duilio Logo" 
             width={160} 
             height={60} 
-            className="object-contain"
+            className="h-[60px] w-auto object-contain"
             priority
           />
         </Link>
