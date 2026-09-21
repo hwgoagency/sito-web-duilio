@@ -14,7 +14,7 @@
     {
       "name": "Primi",
       "items": [
-        {"name": "Spaghetto Felicetti Cacio e Pepe", "description": "", "price": "12.00"},
+        {"name": "Spaghetto Felicetti Cacio e Pepe con Zucchine alla Scapece", "description": "", "price": "12.00"},
         {"name": "Santa Amatriciana", "description": "", "price": "12.00"},
         {"name": "Spaghetto Felicetti alla Carbonara", "description": "", "price": "12.00"},
         {"name": "Mezzemaniche Felicetti alla Gricia", "description": "", "price": "12.00"}
@@ -95,7 +95,7 @@
         {"name": "Pancakes", "description": "Nutella, acero.", "price": "5.00"},
         {"name": "Avocado Toast", "description": "", "price": "6.00"},
         {"name": "Uova e Bacon", "description": "Strapazzate o all’occhio di bue.", "price": "7.00"},
-        {"name": "Toast Mozzarella e Formaggio", "description": "", "price": "5.00"},
+        {"name": "Toast con Mozzarella e Prosciutto", "description": "", "price": "5.00"},
         {"name": "Le Nostre Merendine", "description": "", "price": "3.50"}
       ]
     },
