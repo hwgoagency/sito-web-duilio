@@ -2,62 +2,89 @@
   "week": "Menu ristorante",
   "categories": [
     {
+      "name": "La Formula Aperitivo",
+      "items": [
+        {"name": "Formula Aperitivo", "description": "Scegli cosa bere (uno spritz, una birra alla spina, un calice di vino o un soft drink) e gusta i nostri prodotti del giorno: 1 fritto dalla nostra cucina e 1 tagliere d'assaggio di salumi e formaggi dalla nostra vetrina.", "price": "10.00"}
+      ]
+    },
+    {
+      "name": "Gli Spritz",
+      "items": [
+        {"name": "Aperol Spritz", "description": "", "price": "8.00"},
+        {"name": "Martini Bitter Spritz", "description": "", "price": "8.00"},
+        {"name": "Campari Spritz", "description": "", "price": "8.00"},
+        {"name": "Limoncello Spritz", "description": "", "price": "8.00"},
+        {"name": "Hugo Spritz", "description": "", "price": "8.00"},
+        {"name": "Cynar Spritz", "description": "", "price": "8.00"},
+        {"name": "Select Spritz", "description": "", "price": "8.00"}
+      ]
+    },
+    {
       "name": "Antipasti",
       "items": [
-        {"name": "Polpettine al Sugo", "description": "", "price": "8.00"},
-        {"name": "Mozzarella in Carrozza e Salsa d'Alici", "description": "", "price": "8.00"},
-        {"name": "Polpette di Bollito e Maionese alla Salsa Verde", "description": "", "price": "8.00"},
-        {"name": "Antipasto Misto Duilio", "description": "Prezzo a persona.", "price": "15.00"},
-        {"name": "Tagliere Misto Salumi e Formaggi", "description": "Prezzo a persona.", "price": "10.00"}
+        {"name": "Polpettine al Sugo", "description": "Macinato di manzo, pomodori pelati, parmigiano, pane, soffritto. Prodotto abbattuto.", "price": "8.00"},
+        {"name": "Mozzarella in Carrozza e Salsa d'Alici", "description": "Pane, mozzarella di bufala, latte, alici. Prodotto abbattuto.", "price": "8.00"},
+        {"name": "Polpette di Bollito e Maionese alla Salsa Verde", "description": "Manzo bollito, pane, pecorino, brodo vegetale, maionese, prezzemolo.", "price": "8.00"},
+        {"name": "Salsicce e Cotiche con i Fagioli", "description": "Salsicce, fagioli borlotti, pomodoro, odori.", "price": "8.00"},
+        {"name": "Antipasto Misto Duilio", "description": "Un assaggio di tutti i nostri antipasti cotti. Prezzo a persona.", "price": "15.00"},
+        {"name": "Tagliere Misto Salumi e Formaggi", "description": "Prezzo a persona.", "price": "12.00"}
       ]
     },
     {
       "name": "Primi",
       "items": [
-        {"name": "Spaghetto Felicetti Cacio e Pepe con Zucchine alla Scapece", "description": "", "price": "12.00"},
-        {"name": "Santa Amatriciana", "description": "", "price": "12.00"},
-        {"name": "Spaghetto Felicetti alla Carbonara", "description": "", "price": "12.00"},
-        {"name": "Mezzemaniche Felicetti alla Gricia", "description": "", "price": "12.00"}
+        {"name": "Spaghetto Felicetti Cacio e Pepe", "description": "Pecorino, pepe.", "price": "12.00"},
+        {"name": "Mezzemaniche Felicetti all'Amatriciana", "description": "Pomodori pelati, guanciale, pecorino.", "price": "12.00"},
+        {"name": "Spaghetto Felicetti alla Carbonara", "description": "Guanciale, uova, pecorino, pepe.", "price": "12.00"},
+        {"name": "Mezzemaniche Felicetti alla Gricia", "description": "Guanciale, pecorino, pepe.", "price": "12.00"},
+        {"name": "Spaghetti Felicetti Alici, Pomodoro e Pecorino", "description": "Alici (prodotto abbattuto), concassè di pomodori, pecorino, aglio, prezzemolo.", "price": "13.00"},
+        {"name": "Tortelli Ripieni di Coda alla Vaccinara, Burro, Salvia e Fonduta di Parmigiano", "description": "Manzo, soffritto, burro, salvia, parmigiano.", "price": "15.00"}
       ]
     },
     {
       "name": "Secondi",
       "items": [
-        {"name": "Fettina Panata e Contorno", "description": "", "price": "13.00"},
-        {"name": "Involtino al Vino Bianco", "description": "", "price": "12.00"},
-        {"name": "Polletto alla Cacciatora", "description": "", "price": "12.00"},
-        {"name": "Ossobuco con il Purè", "description": "", "price": "14.00"}
+        {"name": "Fettina Panata e Contorno", "description": "Fettina di manzo, pangrattato, uova.", "price": "13.00"},
+        {"name": "Guancia di Manzo Brasata con il Purè", "description": "Guancia di manzo, demi glace, soffritto, purè di patate. Prodotto abbattuto.", "price": "16.00"},
+        {"name": "Polletto alla Cacciatora", "description": "Sovracoscia di pollo, olive taggiasche, aglio, soffritto, aceto di vino, rosmarino. Prodotto abbattuto.", "price": "12.00"},
+        {"name": "Ossobuco con i Piselli", "description": "Ossobuco di vitello, sedano, carota, cipolla, piselli, vino bianco. Prodotto abbattuto.", "price": "14.00"},
+        {"name": "Brasato di Seitan al Vino Rosso, Crema di Patate e Cialda di Pane", "description": "Piatto vegano. Seitan, vino rosso, concentrato di pomodoro, odori, erbe aromatiche, patate, pane croccante.", "price": "15.00"}
       ]
     },
     {
       "name": "Contorni",
       "items": [
-        {"name": "Patate al Forno", "description": "", "price": "5.00"},
-        {"name": "Cicoria Ripassata", "description": "", "price": "5.00"},
-        {"name": "Purè di Patate", "description": "", "price": "4.00"}
+        {"name": "Le Nostre Patate al Forno", "description": "Patate, pangrattato, pomodorini, erbe aromatiche.", "price": "5.00"},
+        {"name": "Cicoria Ripassata", "description": "Cicoria, aglio, olio evo, peperoncino.", "price": "5.00"},
+        {"name": "Purè di Patate", "description": "Patate, burro, latte, parmigiano.", "price": "5.00"}
       ]
     },
     {
       "name": "Dolci",
       "items": [
-        {"name": "Frutta di Stagione", "description": "", "price": "5.00"},
-        {"name": "Tiramisù", "description": "", "price": "6.00"},
-        {"name": "Torta della Nonna", "description": "", "price": "5.00"},
-        {"name": "La Nostra Zuppa Inglese", "description": "", "price": "6.00"}
+        {"name": "Crostata del Giorno", "description": "", "price": "3.50"},
+        {"name": "Tiramisù", "description": "Uova, mascarpone, savoiardi, caffè.", "price": "6.00"},
+        {"name": "Torta della Nonna", "description": "Uova, zucchero, farina, crema pasticcera, pinoli.", "price": "5.00"},
+        {"name": "Zuppa Inglese", "description": "Pan di Spagna, alchermes, crema al cioccolato, crema pasticcera.", "price": "6.00"}
       ]
     },
     {
       "name": "Bibite",
       "items": [
-        {"name": "Acqua Panna 0,50 L (Vetro)", "description": "", "price": "2.00"},
-        {"name": "Acqua San Pellegrino 0,50 L (Vetro)", "description": "", "price": "2.00"},
-        {"name": "Acqua Naturale 0,75 L (Vetro)", "description": "", "price": "2.50"},
-        {"name": "Acqua Frizzante 0,75 L (Vetro)", "description": "", "price": "2.50"},
-        {"name": "Pepsi Cola 33 CL (Vetro)", "description": "", "price": "3.50"},
-        {"name": "Aranciata 33 CL (Vetro)", "description": "", "price": "3.50"},
-        {"name": "Chinotto 33 CL (Vetro)", "description": "", "price": "3.50"},
-        {"name": "Gassosa / Tonica 33 CL (Vetro)", "description": "", "price": "3.00"},
-        {"name": "Succo di Frutta (Vari Gusti) 20 CL", "description": "", "price": "3.00"}
+        {"name": "Acqua Naturale 0,75 L (Vetro)", "description": "", "price": "3.00"},
+        {"name": "Acqua Frizzante 0,75 L (Vetro)", "description": "", "price": "3.00"},
+        {"name": "Acqua Potabile Trattata", "description": "Acqua potabile trattata con apparecchi erogatori microfiltranti.", "price": "2.50"},
+        {"name": "Acqua Potabile Trattata e Gassata", "description": "Acqua potabile trattata con apparecchi erogatori microfiltranti.", "price": "2.50"},
+        {"name": "Pepsi / Pepsi Max", "description": "", "price": "3.50"},
+        {"name": "Aranciata", "description": "", "price": "3.50"},
+        {"name": "Chinotto", "description": "", "price": "3.50"},
+        {"name": "Gassosa / Tonica", "description": "", "price": "3.00"},
+        {"name": "Sprite", "description": "", "price": "3.50"},
+        {"name": "Tonica San Pellegrino", "description": "", "price": "3.50"},
+        {"name": "Schweppes Pompelmo", "description": "", "price": "3.50"},
+        {"name": "Cedrata San Pellegrino", "description": "", "price": "3.50"},
+        {"name": "Succo di Frutta (Vari Gusti)", "description": "", "price": "3.00"},
+        {"name": "Succo di Frutta al Mirtillo", "description": "", "price": "3.20"}
       ]
     },
     {
@@ -73,19 +100,21 @@
       "name": "Birre",
       "items": [
         {"name": "Bionda 0,20", "description": "", "price": "3.00"},
-        {"name": "Bianca 0,20", "description": "", "price": "3.00"},
-        {"name": "Rossa 0,20", "description": "", "price": "3.00"},
+        {"name": "Bianca 0,20", "description": "", "price": "3.50"},
+        {"name": "Rossa 0,20", "description": "", "price": "3.50"},
+        {"name": "Grezza 0,20", "description": "", "price": "3.50"},
         {"name": "Bionda 0,40", "description": "", "price": "5.00"},
         {"name": "Bianca 0,40", "description": "", "price": "5.00"},
-        {"name": "Rossa 0,40", "description": "", "price": "5.00"},
+        {"name": "Rossa 0,40", "description": "", "price": "6.00"},
         {"name": "Grezza 0,40", "description": "", "price": "6.00"}
       ]
     },
     {
-      "name": "Caffetteria",
+      "name": "Cocktail e Amari",
       "items": [
-        {"name": "Caffè Espresso", "description": "", "price": "1.50"},
-        {"name": "Caffè Corretto", "description": "", "price": "2.50"}
+        {"name": "Cocktail Classici", "description": "", "price": "8.00"},
+        {"name": "Drink Analcolico", "description": "", "price": "6.00"},
+        {"name": "Amaro / Liquori / Grappe", "description": "", "price": "3.50"}
       ]
     },
     {
@@ -97,6 +126,26 @@
         {"name": "Uova e Bacon", "description": "Strapazzate o all’occhio di bue.", "price": "7.00"},
         {"name": "Toast con Mozzarella e Prosciutto", "description": "", "price": "5.00"},
         {"name": "Le Nostre Merendine", "description": "", "price": "3.50"}
+      ]
+    },
+    {
+      "name": "Le Nostre Bevande",
+      "items": [
+        {"name": "Caffè Espresso", "description": "", "price": "1.50"},
+        {"name": "Caffè Deca", "description": "", "price": "1.70"},
+        {"name": "Caffè Corretto", "description": "", "price": "2.50"},
+        {"name": "Caffè con Panna", "description": "", "price": "2.00"},
+        {"name": "Cappuccino", "description": "", "price": "2.00"},
+        {"name": "Cappuccino Soia / Orzo", "description": "", "price": "2.20"},
+        {"name": "Latte Macchiato", "description": "", "price": "2.00"},
+        {"name": "Ginseng / Orzo", "description": "", "price": "2.00"},
+        {"name": "Cioccolata Calda", "description": "", "price": "4.50"},
+        {"name": "Cioccolata Calda con Panna", "description": "", "price": "5.00"},
+        {"name": "Tè / Infusi", "description": "", "price": "3.00"},
+        {"name": "Tè / Infusi con Piccola Pasticceria", "description": "", "price": "5.00"},
+        {"name": "Spremuta d'Arancia", "description": "", "price": "3.50"},
+        {"name": "Frullato Proteico", "description": "Banana, yogurt greco, fiocchi d'avena, cacao amaro, latte di mandorla.", "price": "5.00"},
+        {"name": "Frullato Drenante", "description": "Kiwi, mela verde, pompelmo, zenzero, acqua o infuso al finocchio, limone.", "price": "5.00"}
       ]
     },
     {
@@ -136,27 +185,8 @@
     {
       "name": "Calici",
       "items": [
-        {"name": "Calice Vermentino di Gallura", "description": "", "price": "6.00"},
-        {"name": "Calice Falanghina Vulcanico", "description": "", "price": "6.00"},
-        {"name": "Calice Lugana Tommasi", "description": "", "price": "6.00"},
-        {"name": "Calice Pinot Grigio Rosato", "description": "", "price": "7.00"},
-        {"name": "Calice Vermentino Nero 8", "description": "", "price": "8.00"},
-        {"name": "Calice Orgiolo Lacrima di Morro 6", "description": "", "price": "6.00"},
-        {"name": "Calice Corvina Veronese", "description": "", "price": "6.00"}
-      ]
-    },
-    {
-      "name": "Amari e Grappe",
-      "items": [
-        {"name": "Amaro", "description": "", "price": "3.50"},
-        {"name": "Grappa", "description": "", "price": "4.50"}
-      ]
-    },
-    {
-      "name": "Passito",
-      "items": [
-        {"name": "Passito Recioto Valpolicella", "description": "", "price": "5.00"},
-        {"name": "Passito Ries", "description": "", "price": "6.00"}
+        {"name": "Calice Vino Bianco", "description": "Chiedi a noi la disponibilità: calici da 6,00 € o 7,00 €.", "price": "6.00"},
+        {"name": "Calice Vino Rosso", "description": "Chiedi a noi la disponibilità: calici da 6,00 € o 7,00 €.", "price": "6.00"}
       ]
     }
   ]
