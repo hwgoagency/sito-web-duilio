@@ -10,21 +10,11 @@
   --color-background: var(--color-panna-antico);
   --color-foreground: var(--color-blu-notte);
 
-  --font-payoff: "Southam", cursive;
+  --font-payoff: "Southam", var(--font-sacramento), cursive;
   --font-body: var(--font-barlow-condensed), "Avenir Next Condensed", "Georgia", serif;
 
   --shadow-warm: 0 4px 24px rgba(145, 25, 50, 0.12);
   --shadow-warm-lg: 0 8px 48px rgba(145, 25, 50, 0.18);
-}
-
-@layer base {
-  @font-face {
-    font-family: 'Southam';
-    src: url('/fonts/Southam.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-  }
 }
 
 :root {

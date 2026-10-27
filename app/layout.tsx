@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Barlow_Condensed } from "next/font/google";
+import { Barlow_Condensed, Sacramento } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -8,6 +8,13 @@ import { Toaster } from "react-hot-toast";
 const barlowCondensed = Barlow_Condensed({
   variable: "--font-barlow-condensed",
   weight: ["300", "400", "500", "600", "700"],
+  subsets: ["latin"],
+});
+
+// Ripiego del payoff finché manca il file Southam con licenza (vedi public/fonts/README.md)
+const sacramento = Sacramento({
+  variable: "--font-sacramento",
+  weight: "400",
   subsets: ["latin"],
 });
 
@@ -136,7 +143,7 @@ export default function RootLayout({
   return (
     <html
       lang="it"
-      className={`${barlowCondensed.variable} h-full antialiased`}
+      className={`${barlowCondensed.variable} ${sacramento.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col font-body bg-background text-text-primary pt-[92px]">
         <Toaster 
