@@ -171,6 +171,56 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Aperitivo Section */}
+      <section id="aperitivo" className="py-24 px-6 md:px-12 bg-rosso-melograno text-panna-antico overflow-hidden">
+        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+          <FadeIn direction="right">
+            <h2 className="text-4xl md:text-6xl uppercase tracking-tighter font-bold mb-4">
+              L’Aperitivo <br />da Duilio
+            </h2>
+            <p className="font-payoff text-4xl lowercase mb-8">due chiacchiere e un bicchiere</p>
+            <div className="space-y-6 text-lg leading-relaxed opacity-90">
+              <p>
+                C’è un momento, prima di sedersi a tavola, in cui la giornata rallenta.
+                Noi lo chiamiamo aperitivo, ma è soprattutto un’abitudine: passare al bancone,
+                salutare chi c’è già e farsi versare qualcosa di fresco.
+              </p>
+              <p>
+                Non abbiamo orari fissi: l’aperitivo si accende prima di pranzo e prima di cena,
+                quando ne hai voglia. Il fritto esce dalla nostra cucina, i salumi e i formaggi
+                arrivano dalla vetrina. Senza fretta, come si faceva una volta.
+              </p>
+            </div>
+          </FadeIn>
+          <FadeIn direction="left" className="flex flex-col items-center">
+            <div className="relative w-full max-w-md h-64 md:h-80 border-4 border-panna-antico rounded-sm rotate-2 overflow-hidden shadow-warm-lg">
+              <Image
+                src="/images/pecorino-cheese.webp"
+                alt="Formaggi dalla vetrina di Duilio"
+                fill
+                sizes="(min-width: 768px) 448px, 100vw"
+                className="object-cover"
+              />
+            </div>
+            <div className="relative -mt-10 w-[90%] max-w-sm bg-panna-antico text-blu-notte p-8 rounded-sm -rotate-1 shadow-warm-lg border-2 border-terra-siena">
+              <p className="uppercase tracking-widest font-bold text-sm text-lavagna">La formula</p>
+              <p className="text-5xl font-bold text-rosso-melograno mb-6">10 €</p>
+              <ul className="space-y-3 text-lg leading-snug">
+                <li><strong>1 bevanda a scelta</strong> tra spritz, birra o soft drink</li>
+                <li><strong>1 fritto del giorno</strong> dalla nostra cucina</li>
+                <li><strong>1 assaggio di salumi e formaggi</strong></li>
+              </ul>
+              <p className="mt-6 text-sm text-blu-notte/80 italic">
+                Indicativamente prima di pranzo e prima di cena.
+              </p>
+              <div className="pt-6">
+                <Link href="/menu" className="btn-primary">Scopri gli Spritz</Link>
+              </div>
+            </div>
+          </FadeIn>
+        </div>
+      </section>
+
       {/* Momenti da Duilio Gallery Section */}
       <section className="py-24 px-6 md:px-12 bg-panna-antico border-t border-terra-siena/20">
         <div className="max-w-6xl mx-auto">
